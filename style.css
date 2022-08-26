@@ -28,6 +28,7 @@ header .logo{
 header span{
     color: var(--default-color);
     cursor: pointer;
+    height: 4vh;
 }
 
 main{
@@ -62,7 +63,7 @@ main .info p{
 
 
 main .regform{
-    width: 300px;
+    width: 350px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -124,4 +125,31 @@ main .regform .sideinfo{
     margin: 15px;
     font-size: 15px;
     text-align: center;
+}
+
+@media (orientation: portrait)
+{
+    main{
+        flex-direction: column;
+    }
+    main .info{
+        padding-top: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80vw;
+    }
+    main .info .facebook{
+        color: var(--facebook-color);
+        font-weight: bolder;
+        font-size: 5vh; 
+        margin: 2px;
+        margin-left: 0px;
+    }
+    main .info p{
+        color: black; 
+        font-size: 3vh;
+        text-align: center;
+    }
+
 }
