@@ -1,0 +1,79 @@
+:root{
+    --facebook-color: #4267B2;
+    --default-color: #faebd7;
+}
+*{
+    padding: 0px; 
+    margin: 0px; 
+    box-sizing: border-box;
+    
+}
+
+header{
+    width: 100%; 
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--facebook-color);
+    /* background-color: black; */
+}
+header .logo{
+    font-size: 4vh;
+    color: var(--default-color);
+    cursor: pointer;
+    /* color: white; */
+}
+header span{
+    color: var(--default-color);
+    cursor: pointer;
+}
+
+main{
+    display: flex; 
+    width: 100%;
+    height: 100vh;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--default-color);
+
+}
+
+main .info{
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+
+}
+main .info .facebook{
+    color: var(--facebook-color);
+    font-weight: bolder;
+    font-size: 7vh; 
+    margin: 7px;
+    margin-left: 0px;
+}
+main .info p{
+    color: black; 
+    font-size: 3vh;
+}
+
+
+
+main .regform{
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+main .regform form{
+    height: 60vh;
+    background-color: white;
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2px;
+    box-shadow: 2px 2px 2px 2px black;
+
+}
