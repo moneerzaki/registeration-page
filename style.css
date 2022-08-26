@@ -1,6 +1,6 @@
 :root{
-    --facebook-color: #4267B2;
-    --default-color: #faebd7;
+    --facebook-color: #1776f2;
+    --default-color: #F0F2F5;
 }
 *{
     padding: 0px; 
@@ -17,6 +17,7 @@ header{
     align-items: center;
     background-color: var(--facebook-color);
     /* background-color: black; */
+    position: fixed;
 }
 header .logo{
     font-size: 4vh;
@@ -31,6 +32,7 @@ header span{
 
 main{
     display: flex; 
+    flex-wrap: wrap;
     width: 100%;
     height: 100vh;
     justify-content: space-around;
@@ -60,20 +62,66 @@ main .info p{
 
 
 main .regform{
-    width: 40vw;
+    width: 300px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
 }
 main .regform form{
-    height: 60vh;
+    height: 300px;
+    width: 100%; 
     background-color: white;
     display: flex; 
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    padding: 2px;
-    box-shadow: 2px 2px 2px 2px black;
+    padding: 7px;
+    box-shadow: 0px 0px 9px 0px rgb(101, 101, 101);
+    border-radius: 5px;
+}
 
+main .regform form .email, .password {
+    width: 100%;
+    height: 17%;
+    /* background-color: rgb(230, 230, 230); */
+    color: gray;
+    padding: 10px;
+    border: 0.2px solid rgb(125, 125, 125);
+    border-radius: 5px;
+
+}
+
+main .regform form .login {
+    width: 100%;
+    height: 17%;
+    color: white; 
+    font-weight: bold;
+    background-color: var(--facebook-color);
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+}
+
+main .regform form hr{
+    width: 100%;
+    border: 0.2px solid gray;
+    margin-top: 10px; 
+    margin-bottom: 10px; 
+
+}
+main .regform form .createnew{
+    width: 50%;
+    height: 17%;
+    color: white;
+    background-color: #43B82B;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+main .regform .sideinfo{
+    margin: 15px;
+    font-size: 15px;
+    text-align: center;
 }
